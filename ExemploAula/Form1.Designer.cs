@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lbllogin = new Label();
+            lblusuario = new Label();
             SuspendLayout();
             // 
             // lbllogin
@@ -42,11 +43,22 @@
             lbllogin.Text = "Login";
             lbllogin.Click += label1_Click;
             // 
+            // lblusuario
+            // 
+            lblusuario.AutoSize = true;
+            lblusuario.Font = new Font("Segoe UI", 24F);
+            lblusuario.Location = new Point(104, 94);
+            lblusuario.Name = "lblusuario";
+            lblusuario.Size = new Size(128, 45);
+            lblusuario.TabIndex = 1;
+            lblusuario.Text = "Usuario";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblusuario);
             Controls.Add(lbllogin);
             Name = "Form1";
             Text = "Form1";
@@ -58,5 +70,6 @@
         #endregion
 
         private Label lbllogin;
+        private Label lblusuario;
     }
 }
